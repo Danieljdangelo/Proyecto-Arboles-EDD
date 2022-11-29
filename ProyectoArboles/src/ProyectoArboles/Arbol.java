@@ -9,5 +9,14 @@ package ProyectoArboles;
  * @author danieldangelo
  */
 public class Arbol {
+    NodoArbol raiz;
+    Pila pila;
     
+    public Arbol(NodoArbol raiz){
+        this.raiz = raiz;
+    }
+    
+    public Arbol(){
+        this.raiz = null;
+    }
 }
