@@ -99,4 +99,19 @@ public class NodoArbol<T> {
     public void setDerecho(NodoArbol derecho) {
         this.derecho = derecho;
     }
+    
+    /**
+     * Función que define cuantos nodos a partir de la raiz, tienen sus dos hijos
+     * @param NodoArbol n
+     * @return int
+     */
+    public int nodosCompletos(NodoArbol n) {
+        if (n == null)
+            return 0;
+        else {
+            if (n.izquierdo != null && n.derecho != null)
+                return nodosCompletos(n.izquierdo) + nodosCompletos(n.derecho) + 1;
+            return nodosCompletos(n.izquierdo) + nodosCompletos(n.derecho);
+        }
+    }
 }
