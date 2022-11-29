@@ -9,9 +9,6 @@ import java.io.File;
 import java.io.FileWriter;
 import javax.swing.JOptionPane;
 import java.awt.Graphics;
-//import static mainproyecto2.ArbolGrafico.ANCHO;
-//import static mainproyecto2.ArbolGrafico.DIAMETRO;
-//import static mainproyecto2.ArbolGrafico.RADIO;
 
 /**
  *
