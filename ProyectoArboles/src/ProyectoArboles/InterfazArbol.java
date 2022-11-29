@@ -9,7 +9,6 @@ import java.io.File;
 import java.io.FileWriter;
 import javax.swing.JOptionPane;
 import java.awt.Graphics;
-
 /**
  *
  * @author danieldangelo
@@ -66,7 +65,7 @@ public class InterfazArbol extends javax.swing.JFrame {
 
         jLabel2.setText("Escribir expresión en el archivo:");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
-        jPanel1.add(ExpresionTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, 450, 40));
+        jPanel1.add(ExpresionTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, 460, 40));
 
         GraficarArbolBtn.setBackground(new java.awt.Color(0, 204, 51));
         GraficarArbolBtn.setText("Graficar árbol");
@@ -132,7 +131,6 @@ public class InterfazArbol extends javax.swing.JFrame {
         if(expresion.isEmpty()){
             JOptionPane.showMessageDialog(null, "No hay información para guardar. ");
         }else{
-//            JOptionPane.showMessageDialog(null, "                                   ALERTA! \nSi no seleccionas la opción correcta, no creará bien el árbol.");
             LecturaArchivos archivo = new LecturaArchivos(expresion);//Se crea un objeto que contiene la lectura y escritura del archivo de texto
             archivo.EscribirTxt(expresion);//Se escribe la expresión en el .txt
             String expArbol = archivo.LeerTxt();//Se lee el archivo y lo que retorna, se guarda en una varible de tipo String para luego usarla para crear el árbol          

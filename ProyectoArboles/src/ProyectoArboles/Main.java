@@ -10,6 +10,7 @@ package ProyectoArboles;
  */
 public class Main {
     public static void main(String[] args) {
-        
+        InterfazArbol proyecto = new InterfazArbol();
+        proyecto.show();
     }
 }
