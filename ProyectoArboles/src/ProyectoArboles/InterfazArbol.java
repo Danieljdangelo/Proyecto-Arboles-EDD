@@ -153,7 +153,7 @@ public class InterfazArbol extends javax.swing.JFrame {
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        pintar(g, getWidth()/2, 40, arbol.getRaiz());
+        pintar(g, getWidth()/2, 100, arbol.getRaiz());
     }
     /**
      * Método que recibe las coordenadas de los circulos y lineas, pinta recursivamente el arbol dada su raiz
